@@ -15,6 +15,10 @@ const OrdersSchema = new mongoose.Schema({
     amount:{
         type:String,
         required:true
+    },
+    status:{
+        type:String,
+        default:"placed"
     }
 },{timestamps:true})
 
